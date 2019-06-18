@@ -1,8 +1,8 @@
 // JavaScript Document
 
-jQuery(window).load(function(){
-     jQuery('.loader').fadeOut();
-});
+// jQuery(window).load(function(){
+//      jQuery('.loader').fadeOut();
+// });
 
 	  
 $(window).scroll(function () {

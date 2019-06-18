@@ -19,7 +19,7 @@ use Rack::Static,
 
 static_page_mappings.each do |req, file|
   map req do 
-    run Proc.new { |env|
+    run lambda { |env|
       [
         200, 
         {
