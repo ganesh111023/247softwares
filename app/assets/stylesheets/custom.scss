@@ -394,7 +394,7 @@ span.icon {
 /*----------------------------------------------------------------------------------SEC FAQ START*/
 /*----------------------------------------------------------------------------------ABOUT SECTION START*/
 .sec-about {
-    background: url(bg-about.jpg) no-repeat center top;
+    background: url(asset_path('bg-about.jpg')) no-repeat center top;
     background-size: cover;
     position: relative;
     z-index: 1;
