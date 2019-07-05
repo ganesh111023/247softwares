@@ -4504,3 +4504,12 @@ Processing by PagesController#contact as HTML
 Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/technology" for ::1 at 2019-07-05 14:21:04 +0530
+Processing by PagesController#technology as HTML
+  Rendering pages/technology.html.erb within layouts/application
+  Rendered pages/technology.html.erb within layouts/application (335.7ms)
+  Rendered shared/_header.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 380ms (Views: 369.1ms | ActiveRecord: 0.0ms)
+
+
