@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def career
+    @contact = Contact.new
   end
 
   def team
