@@ -13,3 +13,9 @@
  *= require bootstrap.min
  *= require custom
  */
+.icon-span {    
+  float: right;
+  top: 24px !important;
+  right: 6px !important;
+  z-index: 2;
+}

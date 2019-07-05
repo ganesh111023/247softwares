@@ -219,7 +219,45 @@
 			</p>
 			<div class="row">
 				<div class="col-12 col-sm-12 col-md-8 col-lg-8">
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0vRcYtVCmot7Zcgok1Gb6jlrK1psCigzICEfe8vRtywPINg/viewform?embedded=true" width="640" height="1265" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+					<div id="sucess_msg"></div>
+					<%= simple_form_for @contact, :html => {:id=>"main-contact-form", :name=>"contact-form", class: 'contact-form'} do |f| %>
+            <div id="con"></div>
+            <div class="row">
+							<div class="col-6 col-sm-6 col-md-6">
+								<div class="form-group">
+									<i class="fas fa-user icon-span"></i>
+									<%= f.input :name, :required => true,input_html: { :class=>"form-control"}, :placeholder=>"Name" %>
+								</div>
+							</div>
+            	<div class="col-6 col-sm-6 col-md-6">
+								<div class="form-group">
+									<i class="fas fa-envelope icon-span"></i>
+            			<%= f.input :email, :required => true,input_html: { :class=>"form-control"}, :placeholder=>"Email" %>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6 col-sm-6 col-md-6">
+								<div class="form-group">
+									<i class="fas fa-file-alt icon-span"></i>
+									<%= f.input :subject,input_html: { :class=>"form-control"}, :placeholder=>"Subject" %>
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6">
+								<div class="form-group">
+									<i class="fas fa-phone icon-span"></i>
+									<%= f.input :phone_number, input_html: { :class=>"form-control"}, :placeholder=>"Phone Number" %>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<i class="fas fa-comments icon-span"></i>
+							<%= f.input :message, :as => :text, :required => true,input_html: { :class=>"form-control", rows: "5", cols: "100"}, :placeholder=>"Message" %>
+						</div>
+						<div class="form-group p-t30">
+							<%= f.button :submit, 'Send message' %>
+						</div>
+          <% end %>
 				</div>
 				<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
 					<div class="google-map">
