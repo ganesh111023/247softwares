@@ -1198,10 +1198,9 @@ html .navbar-collapse ul li + li{
 }
 
 .logo-custom{
-    width: 158px;
-    height: 146px;
+    width: auto;
+    height: auto;
     position: absolute;
-    left: 100px;
     top: 4px;
     z-index: 2000;
 }
